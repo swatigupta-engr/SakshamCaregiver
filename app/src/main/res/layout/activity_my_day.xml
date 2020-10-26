@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MyDayActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myDayQuestion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Question1"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#e77728" />
+
+        <Spinner
+            android:id="@+id/myDayAnswer1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:entries="@array/medicineList"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/myDayQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="Question2"
+            android:justificationMode="inter_word"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="#e77728" />
+
+        <Spinner
+            android:id="@+id/myDayAnswer2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:entries="@array/medicineList"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myDaySubmit"
+            android:text="@string/submit_text"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>
